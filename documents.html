@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Technical Documentation</header>
+      <a class="nav-link" href="#First_topic">Introduction</a>
+      <a class="nav-link" href="#Second_topic">Cyber Security</a>
+      <a class="nav-link" href="#Third_topic">Money Making Threats</a>
+      <a class="nav-link" href="#Fourth_topic">Cyber Security Dark Web</a>
+      <a class="nav-link" href="#Fifth_topic">Network Mapping</a>
+      <a class="nav-link" href="#Sixth_topic">Network Layer</a>
+      
+      </nav>
+      
+      <main id="main-doc">
+            
+            <section id="First_topic" class="main-section" >
+                <header>Introduction</header>
+                <p>Cyber security is the application of technologies, processes, and controls to protect systems, networks, programs, devices and data from cyber attacks. It aims to reduce the risk of cyber attacks and protect against the unauthorised exploitation of systems, networks, and technologies.</p>
+            
+            </section>
+
+            <section id="Second_topic" class="main-section">
+            <header>Cyber security</header>
+            <p>
+                1. What is Cyber Crime? Just like regular crime, it also exists on the Internet. Here are some examples of Cyber Crime:</p> 
+            <ul>
+                <li>Identity Theft</li>
+                <li>Online Predators</li>
+                <li>BEC ("Business Email Compromise")</li>
+                <li>Ransomware</li>
+                <li>Stealing of sensitive intellectual property
+                </li>
+            </ul>
+
+            
+
+            <section id="Third_topic" class="main-section">
+            <header>Money Making Threats</header>
+                <p>Another common attack cyber criminals perform to make money is the act of extortion, that is holding individuals hostage based on information they have on a individual, trying to make them pay money to be released from the extortion attempt. Consider the following common scenario:</p>
+                <ul>
+                    <li>A person meets up with someone online, the other party is actually a scam artists trying to trick the victim.</li>
+                    <li>They engage in interesting conversations and seem to make an immediate deep bond between one another.</li>
+                    <li>They might even engage in video conversations, but the scam artists is for example using recorded video or simply has an excuse for not being able to activate their microphone or web-camera.</li>
+                </ul>
+            
+            
+            </section>
+
+            <section id="Fourth_topic" class="main-section">
+            <header>Cyber Security Dark Web</header>
+                <p>The Dark Web(also called The Dark Net) is a network within the Internet which is only accessible using certain software and protocols.
+                    The Dark Web has many names, for example Tor Network or Onion Router.
+                    Anyone can access to the Dark Web by simply downloading software for it. A popular and very much used browser is the Tor Project's Tor Browser
+                    This is just like any other browser such as Google Chrome or Microsoft Edge, except it can also access special website addresses which ends in .onion instead of .com and such.
+                </p>
+
+                <p>Example of a Dark Web:</p>
+                <ul>
+                    <li>Facebook - http://www.facebookcorewwwi.onion/</li>
+                    <li>DuckDuckGo Search Engine - http://3g2upl4pq6kufc4m.onion/</li>
+                    <li>The American CIA ("Central Intelligence Agency") - http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion
+                        The Hidden Wiki, a collection of links and places to explore -</li>
+                </ul>
+            </section>
+
+            <section id="Fifth_topic" class="main-section">
+                <header>Network Basic</header>
+                <p>One way to identify hosts which are active on the network is to send a ping, i.e. ICMP Echo Request, to all IP Addresses in the network. This is often referred to as a Ping Sweep.</p>
+                <p>This approach is not very good in discovering assets. It is likely that systems on the network will ignore incoming pings, perhaps due to a Firewall blocking them or because of a Host-Based Firewall. A host-based firewall is simply a firewall which is implemented on the system instead of on the network. </p>
+                <p>A better approach involves sending a different kinds of packets to a system to try ask for any kind of answer to determine if system is alive or not. For example Nmap will send the following packets to the system to try cause a response:</p>
+
+                <ul>
+                    <li>ICMP Echo Request</li>
+                    <li>TCP SYN packet to port 443</li>
+                    <li>TCP ACK packet to port 80</li>
+                    <li>ICMP Timestamp request</li>
+                </ul>
+            </section>
+
+            <section id="Sixth_topic" class="main-section"> 
+                <header>Network Layer</header>
+                <h1>The Internet Protocol</h1>
+
+                <p>IP is used to communicate across networks, not just across physical links, but between networks of routers. The addressing scheme in use is either IPv4 ("IP Version 4") or IPv6 ("IP Version 6").</p>
+                <p>IP networks can be broken into different sections, often called subnets. This is accomplished by adding an extra piece of information, together with the IP address, called a netmask. The netmask dictates how large a network is and which packet is routed within the network and which should be routed outside of the network.</p>
+                <p>Netmasks can be represented via decimal numbers or with a slash notation.  When using slash notation, the slash follows the systems IP address. Here are some examples:</p>
+            <table>
+                
+                <colgroup span="3" style="background-color: rgb(160, 92, 92);" column="">
+                </colgroup>
+                    
+                    <tr>
+                        <th>IP Address</th>
+                        <th>Slash Notation</th>
+                        <th>Netmask</th>
+                    </tr>
+
+                    <tr>
+                        <td>10.0.0.1</td>
+                        <td>/8   - Example: 10.0.0.1/8</td>
+                        <td>255.0.0.0</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>172.16.1.1</td>
+                        <td>	/12 - Example: 172.16.1.1/12</td>
+                        <td>255.240.0.0</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>192.168.0.1</td>
+                        <td>/16 - Example: 192.168.0.1/16</td>
+                        <td>255.255.0.0</td>
+                        
+                    </tr>
+            </table>
+            </section>
+
+
+
+
+    
+        </main>
+
+  </body>
+
+  
+
+</html>
